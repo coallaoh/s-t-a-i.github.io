@@ -9,6 +9,12 @@ short_name = "Jihyeok Jung"
 title = "MSc student"
 sort_position = 13
 
+
+[[social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:ji9759@kaist.ac.kr"
+
 [[social]]
     icon = "github"
     icon_pack = "fa"
