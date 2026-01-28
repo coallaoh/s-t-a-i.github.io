@@ -225,6 +225,12 @@ span.darknav {
     font-size: 25pt;
 }
 
+@media (max-width: 991px) {
+    .section-heading {
+        margin-bottom: 30px;
+    }
+}
+
 .section-heading h1 a {
     color: #000000;
 }
@@ -245,6 +251,12 @@ span.darknav {
 
 .logos-row {
   font-size: 0;
+}
+
+@media (max-width: 767px) {
+    .logos-row {
+        margin-top: 50px;
+    }
 }
 
 .logos-row  > * {
