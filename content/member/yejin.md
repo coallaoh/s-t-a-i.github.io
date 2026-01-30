@@ -44,6 +44,8 @@ sort_position = 9
 	role = "Research Intern"
 +++
 
+My personal page is at [sites.google.com/view/yejin-c-kim](https://sites.google.com/view/yejin-c-kim)
+
 I'm a research intern at KAIST AI under the supervision of Prof. Seong Joon Oh. Previously, I received my M.S. in Artificial Intelligence in 2026 and my B.S. in Computer Science and Engineering with Magna Cum Laude honors in 2024, both from Sogang University.
 
 My research lies in the field of AI Safety, with a particular interest in building models that are both fair, responsible, and transparent. Specifically, I am interested in machine unlearning, which seeks to selectively remove the influence of specific data to protect user privacy, copyright, and data ownership. Recently, I have been exploring unlearning techniques in both large language models (LLMs) and large vision-language models (LVLMs). Also, I have developed a growing interest in model explainability, as understanding how a model forgets certain knowledge is crucial for ensuring trustworthy and verifiable unlearning. By combining unlearning and explainability, my goal is to contribute toward safer and more accountable AI systems.
