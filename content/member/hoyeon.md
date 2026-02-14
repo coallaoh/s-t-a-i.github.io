@@ -16,8 +16,9 @@
 
 +++
 
-I am a first-year PhD Student at the Tübingen AI Center, University of Tübingen, supervised by Seong Joon Oh and co-supervised by Matthias Bethge. My personal webpage is at ankitsonthalia.com.
+I am a Ph.D. student at KAIST Graduate School of AI, advised by [Minjoon Seo](https://seominjoon.github.io/) and [Seongjoon Oh](https://seongjoonoh.com/). My personal page is at [hoyeonchang.github.io](https://hoyeonchang.github.io/).
 
-The simplicity bias often causes machine learning models to learn semantically meaningless, "spurious" correlations between inputs and outputs. This phenomenon hurts generalization, thus leading to often unpredictable failure cases and our inability to trust AI systems. I'm interested in understanding how to encourage ML models to learn more meaningful, causal correlations instead. Better generalization capability and trustworthiness would follow as direct consequences.
+My research investigates the structural foundations of intelligence: specifically, how systematic compositionality and robust belief revision can be realized in connectionist networks. Currently, I am exploring the interface of category theory and the geometry of neural representations, aiming to uncover the structural constraints that govern generalization. I deeply value interdisciplinary insights and enjoy connecting ideas from philosophy, linguistics, cognitive science, and mathematics to build a comprehensive picture of intelligence.
 
-I obtained my Bachelor and Master degrees in Computer Science and Mathematics, respectively, in 2022, from a five-year integrated program at BITS Pilani, Pilani campus, India. During this time, I worked on a Computer Vision project at the Augmented Vision Department, German Research Centre for Artificial Intelligence (DFKI), led by Prof. Dr. Didier Stricker; and another under the supervision of Bharath Ramesh at the Western Sydney University. After that, I went on to further explore my science and engineering interests as a research software engineer at the Tübingen AI Center, where I collaborated with STAI for a year, before joining the group as a PhD student.
+Previously, I obtained a B.S. in Electrical & Computer Engineering and Biological Sciences from Seoul National University.
+Outside of research, [I am a jazz pianist and occasionally play at jazz clubs in Seoul](https://www.youtube.com/@alpaca4199).
