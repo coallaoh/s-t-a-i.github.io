@@ -27,8 +27,8 @@ We expect MSc students to run their own first-author projects, with possible col
 Steps 1-4 must be completed at least one week before the group offer announcement dates below. Please reach out well in advance.
 
 *Group offer announcement (step 4)*
-- International spring: 31 August
-- International autumn (early track): 30 November
-- International autumn (regular track): 28 February
-- Domestic spring: 30 June
-- Domestic autumn: 31 March
+- International spring: 20 August
+- International autumn (early track): 20 November
+- International autumn (regular track): 20 February
+- Domestic spring: 20 June
+- Domestic autumn: 20 March
