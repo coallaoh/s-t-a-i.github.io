@@ -9,6 +9,10 @@ url_arxiv = "//arxiv.org/abs/2601.15220"
 url_pdf = "//arxiv.org/pdf/2601.15220"
 url_rtai = "//researchtrend.ai/papers/2601.15220"
 
+[[workshops]]
+    name = "ICLR 2026 Workshop on Principled Design for Trustworthy AI"
+[[workshops]]
+    name = "ICLR 2026 Workshop on Navigating and Addressing Data Problems for Foundation Models"
 
 [[authors]]
     name = "Anmol Goel"
