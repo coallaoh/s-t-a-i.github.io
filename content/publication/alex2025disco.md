@@ -12,6 +12,10 @@ url_pdf = "//arxiv.org/pdf/2510.07959"
 url_rtai = "//researchtrend.ai/papers/2510.07959"
 url_project = "//arubique.github.io/disco-site/"
 
+[[workshops]]
+    name = "ICLR 2026 Workshop on Navigating and Addressing Data Problems for Foundation Models"
+[[workshops]]
+    name = "Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop (Oral)"
 
 [[authors]]
     name = "Alexander Rubinstein"
