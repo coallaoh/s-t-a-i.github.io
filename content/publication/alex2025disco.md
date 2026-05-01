@@ -16,6 +16,8 @@ url_project = "//arubique.github.io/disco-site/"
     name = "ICLR 2026 Workshop on Navigating and Addressing Data Problems for Foundation Models"
 [[workshops]]
     name = "Catch, Adapt, and Operate: Monitoring ML Models Under Drift Workshop (Oral, Best Paper Award)"
+[[workshops]]
+    name = "GEM 2026 Workshop on Natural Language Generation, Evaluation, and Metrics"
 
 [[authors]]
     name = "Alexander Rubinstein"
