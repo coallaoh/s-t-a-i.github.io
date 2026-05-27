@@ -8,6 +8,9 @@ title = "When Do Diffusion Models learn to Generate Multiple Objects?"
 url_arxiv = "//arxiv.org/abs/2605.00273"
 url_pdf = "//arxiv.org/pdf/2605.00273"
 
+[[workshops]]
+    name = "ICML 2026 Workshop CompLearn (Poster)"
+
 [[authors]]
     name = "Yujin Jeong"
     is_member = false
