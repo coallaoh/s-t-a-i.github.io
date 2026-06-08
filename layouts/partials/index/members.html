@@ -9,7 +9,9 @@
         </div>
 
         <!-- Members -->
-        <div class="row">
+        <div id="members-dynamic" class="row" data-members-api="{{ .Site.Params.members_api_url }}" data-image-base="{{ .Site.BaseURL }}/img"></div>
+
+        <div id="members-static" class="row">
             {{ range (sort (where .Site.RegularPages "Type" "member") ".Params.sort_position")}}
                 {{ if not .Params.is_former_member }}
                     {{ partial "member_simple" . }}
@@ -19,3 +21,59 @@
 
     </div>
 </section>
+
+{{ if .Site.Params.members_api_url }}
+<script>
+(function () {
+  var root = document.getElementById("members-dynamic");
+  var fallback = document.getElementById("members-static");
+  if (!root) return;
+  var api = root.getAttribute("data-members-api");
+  if (!api) return;
+  var imageBase = root.getAttribute("data-image-base") || "";
+  function esc(value) {
+    return String(value || "").replace(/[&<>"']/g, function (ch) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch];
+    });
+  }
+  function imageUrl(path) {
+    if (!path) return imageBase + "/portraits/portrait.jpg";
+    if (/^https?:\/\//.test(path)) return path;
+    return imageBase.replace(/\/$/, "") + "/" + path.replace(/^\/+/, "");
+  }
+  function socialIcon(link) {
+    if (!link || !link.url || !link.icon) return "";
+    var pack = link.iconPack === "ai" ? "ai ai-" : "fa fa-";
+    return '<li><a href="' + esc(link.url) + '" title="' + esc(link.label || "") + '"><i class="' + pack + esc(link.icon) + ' small-icon" aria-hidden="true"></i></a></li>';
+  }
+  fetch(api)
+    .then(function (res) { return res.ok ? res.json() : null; })
+    .then(function (payload) {
+      var members = payload && payload.members;
+      if (!Array.isArray(members) || members.length === 0) return;
+      root.innerHTML = members.map(function (member) {
+        var links = "";
+        if (member.email) links += '<li><a href="mailto:' + esc(member.email) + '"><i class="fa fa-envelope small-icon" aria-hidden="true"></i></a></li>';
+        if (Array.isArray(member.socialLinks)) {
+          links += member.socialLinks.map(socialIcon).join("");
+        } else if (member.websiteUrl) {
+          links += '<li><a href="' + esc(member.websiteUrl) + '"><i class="fa fa-globe small-icon" aria-hidden="true"></i></a></li>';
+        }
+        return '' +
+          '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">' +
+            '<div id="profile">' +
+              '<img class="portrait" itemprop="image" src="' + esc(imageUrl(member.portraitPath)) + '" alt="' + esc(member.name) + '" />' +
+              '<div class="portrait-title">' +
+                '<h2 itemprop="name">' + esc(member.name) + '</h2>' +
+                (member.title ? '<h4>' + esc(member.title) + '</h4>' : '') +
+                (links ? '<ul class="social-icon-main-page">' + links + '</ul>' : '') +
+              '</div>' +
+            '</div>' +
+          '</div>';
+      }).join("");
+      if (fallback) fallback.style.display = "none";
+    })
+    .catch(function () {});
+})();
+</script>
+{{ end }}
