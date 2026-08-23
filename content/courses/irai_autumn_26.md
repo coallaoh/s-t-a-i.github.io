@@ -12,4 +12,4 @@ The syllabus for this course is on the course site: **[irai.stai-lab.org/syllabu
 
 It carries the goals, the prerequisites, the weekly format, the 29-session schedule, the class test collection and the project, the assessment weights and rubrics, the generative AI policy, the reading list and the logistics. It is the source of truth for all of them.
 
-The course site also serves the lecture decks as they are delivered, and it is where enrolled students sign in.
+The [course site](https://irai.stai-lab.org/) also serves the lecture decks as they are delivered, and it is where enrolled students sign in.
