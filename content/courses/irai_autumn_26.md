@@ -201,10 +201,10 @@ Sessions run 09:00-10:00, except the three project workshops, which run 09:00-10
 | 11 | Wed 14 Oct | **Discussion.** Critically Examining the "Neural Hype" | Review, Tue 18:00 |
 | 12 | Mon 19 Oct | Retrieval that needs reasoning. Reasoning-intensive queries, synthetic training data, rerankers that reason | - |
 | 13 | Wed 21 Oct | **Discussion.** ColBERT | Review, Tue 18:00 |
-| 14 | Mon 26 Oct | Retrieval uncertainty. Probabilistic embeddings. Ambiguity as underspecification. Cross-modal retrieval | - |
+| 14 | Mon 26 Oct | Ambiguity and uncertainty in retrieval. A point is the wrong object. Probabilistic embeddings. Ambiguity as underspecification rather than noise. What uncertainty buys at retrieval time | - |
 | 15 | Wed 28 Oct | **Discussion.** BRIGHT | Review, Tue 18:00 |
 | 16 | Mon 02 Nov | Attention as retrieval. Retrieval heads, attention as associative memory, and the memory-network lineage | - |
-| 17 | Wed 04 Nov | **Discussion.** Probabilistic Embeddings for Cross-Modal Retrieval | Review, Tue 18:00 |
+| 17 | Wed 04 Nov | **Discussion.** AmbigQA | Review, Tue 18:00 |
 | 18 | Mon 09 Nov | Memory as an architectural axis. Product-key memory, memory layers at scale, mixture of experts, and Engram's second axis of sparsity | - |
 | 19 | Wed 11 Nov | **Project workshop 2, 90 min.** Complete the judging pass, analyse judge agreement, implement and measure your group's modification | Relevance judgements complete |
 | 20 | Mon 16 Nov | Memory learned at test time. Titans, nested learning, cartridges. Weights that can be edited without forgetting | - |
@@ -391,7 +391,7 @@ The instructor prepares lecture material with model assistance and adds the mode
 | 2 | 8 (30 Sep) | Thakur et al. (2021), *BEIR* (NeurIPS Datasets and Benchmarks) |
 | 3 | 13 (21 Oct) | Khattab & Zaharia (2020), *ColBERT* (SIGIR) |
 | 4 | 15 (28 Oct) | Su et al. (2025), *BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval* (ICLR) |
-| 5 | 17 (4 Nov) | Chun et al. (2021), *Probabilistic Embeddings for Cross-Modal Retrieval* (CVPR) |
+| 5 | 17 (4 Nov) | Min, Michael, Hajishirzi & Zettlemoyer (2020), *AmbigQA: Answering Ambiguous Open-domain Questions* (EMNLP) |
 | 6 | 21 (18 Nov) | Cheng et al. (2026), *Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models* - the Engram paper |
 | 7 | 25 (2 Dec) | Jin et al. (2025), *Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning* (COLM) |
 | 8 | 27 (9 Dec) | Hu, Wang & McAuley (2026), *Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions* (ICLR) |
@@ -403,7 +403,7 @@ Four notes on the choices.
 - **Session 8 opens the discussion series**, four weeks in. BEIR goes first because it launches the judging protocol that workshop 1 needs two days later.
 - **Sessions 8 and 15** are the same finding five years apart. BEIR reports that BM25 beats dense retrievers out of domain; BRIGHT reports that they lose again once the query needs reasoning. Nobody is told in advance that these are related.
 - **Session 11 puts "your baselines were weak" after the class has built a test collection by hand.** Reading that argument having just felt how arbitrary a relevance judgement is hits differently from reading it in week two.
-- **Session 17** is the instructor's own paper, deliberately. Six students attacking it in front of the author settles the question of whether criticism is welcome.
+- **Session 17 asks how many of your own queries were ambiguous.** Over half the questions in NQ-open, a standard open-domain benchmark, turn out to have more than one right answer. You will have written sixty queries and judged them by hand two weeks earlier.
 - **Session 27** closes the loop to session 4 with 2026 material. A benchmark finds that no memory method masters all four competencies it defines; the adversary's paper then finds that swapping only the embedding model flips which method wins.
 
 {{< details "Choosing your supporting paper: the rules" >}}
