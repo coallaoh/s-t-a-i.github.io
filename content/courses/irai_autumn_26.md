@@ -67,9 +67,11 @@ The middle three rows are where the figure changed in 2026. Routing computation 
 
 ## 3. How the course runs
 
+**The first four weeks are lectures only.** Discussion sessions begin on 30 September, once groups are formed and there is enough retrieval background to argue about a paper rather than decode it.
+
 **Monday** is a lecture on the method. 45 minutes of content, 10 minutes of questions, 5 minutes on the following Wednesday.
 
-**Wednesday** is a discussion of a research paper that uses it, in fixed groups of five. Four Wednesdays are lectures instead.
+**Wednesday** is a discussion of a research paper that uses it, in fixed groups of five. Four Wednesdays are lectures instead, and so are the first three.
 
 **The only weekly deadline is Tuesday 18:00**, when you submit a half-page written review of the assigned paper.
 
@@ -87,18 +89,20 @@ The middle three rows are where the figure changed in 2026. Routing computation 
 
 Students are divided into fixed discussion groups of five, held all semester. Each member takes a different role for the week, and roles rotate. Every student holds each role at least once over the term.
 
-| Role | The job | Supporting paper |
+| Role | The job | Your supporting paper must |
 |---|---|---|
-| Adversary | Attack the experiments, find the missing baseline | A paper that contradicts the assigned one |
-| Historian | What came before, and what this paper quietly discards | The predecessor it builds on |
-| Replicator | Check that the numbers support the claims, and measure something | A reproduction or a rerun |
-| Referee | On a paper too new to have been reproduced: would you accept it? | The paper's public review thread, or none |
-| Extender | Propose the next paper and say what it would test | The successor, chosen by the extenders themselves |
-| Applier | Would you deploy this, at what index size, latency and cost | A systems or deployment paper |
+| Adversary | Attack the experiments, find the missing baseline | Make a claim which, if true, weakens the assigned paper's central claim |
+| Historian | What came before, and what this paper quietly discards | Predate the assigned paper, and be one it builds on or reacts to |
+| Replicator | Check that the numbers support the claims, and measure something | Report numbers for the assigned method that its own authors did not produce |
+| Referee | On a paper too new to have been reproduced: would you accept it? | Not apply - the document is the paper's public review thread, or none exists |
+| Extender | Propose the next paper and say what it would test | Postdate the assigned paper and build on it |
+| Applier | Would you deploy this, at what index size, latency and cost | Contain at least one quantitative resource number from a real deployment |
 
-**There are five roles, not six.** On the four assigned papers published in the last eighteen months, the Replicator becomes the Referee, because no reproduction study exists for a paper that new. The role keeps the same question - should this be believed - and changes the evidence. Where the paper has a public review thread, you read what four reviewers decided and compare it with what your group decided. Where it does not, you write the first review yourself.
+**You choose your own supporting paper.** Nobody assigns it. Recommendations are published for every role on every assigned paper, and taking one costs you nothing - the course pays for what you do with the paper, not for the effort of finding it. The full rules are below.
 
-Sessions 13 and 27 have threads. Session 21 does not, so the Referee reads the reviews of the *contradicting* paper as a worked example and then reviews the anchor cold. Session 25 has neither, and that Referee writes a review with no model to follow at all.
+**There are five roles, not six.** On the four assigned papers published in the last eighteen months - sessions 15, 21, 25 and 27 - the Replicator becomes the Referee, because no reproduction study exists for a paper that new. The role keeps the same question - should this be believed - and changes the evidence. Where the paper has a public review thread, you read what four reviewers decided and compare it with what your group decided. Where it does not, you write the first review yourself.
+
+Sessions 15 and 27 have threads. Session 21 does not, so the Referee reads the reviews of the *contradicting* paper as a worked example and then reviews the anchor cold. Session 25 has neither, and that Referee writes a review with no model to follow at all.
 
 Note-taking is a duty rather than a role. Rotate it inside the group.
 
@@ -185,22 +189,22 @@ Sessions run 09:00-10:00, except the three project workshops, which run 09:00-10
 | 1 | Mon 31 Aug | Why retrieval now. Eight arguments, the knowledge-location spectrum, course mechanics | - |
 | 2 | Wed 02 Sep | The inverted index. Tokenisation, postings, compression. TF-IDF and the vector space model | - |
 | 3 | Mon 07 Sep | BM25 and probabilistic ranking. Query likelihood, smoothing, relevance feedback | - |
-| 4 | Wed 09 Sep | **Discussion.** Critically Examining the "Neural Hype" | Review, Tue 18:00 |
-| 5 | Mon 14 Sep | Evaluation, and how benchmarks lie. MAP, MRR, nDCG. Pooling and its biases. TREC, BEIR, and the same failure recurring in 2026 | - |
-| 6 | Wed 16 Sep | **Discussion.** BEIR. Launch of the class collection and judging protocol | Review, Tue 18:00 |
+| 4 | Wed 09 Sep | Evaluation, and how benchmarks lie. MAP, MRR, nDCG. Pooling and its biases. TREC, BEIR, and the same failure recurring in 2026 | - |
+| 5 | Mon 14 Sep | Web search, and what is wrong with it today. Crawling, indexing at scale, PageRank, HITS. The modern commercial stack, who owns an index, eleven weaknesses | Three-engine query comparison, before class |
+| 6 | Wed 16 Sep | Bi-encoders, and one space for both jobs. SentenceBERT, DPR, hard negatives, distillation. LLM embedders. Generating and retrieving in a single pass | - |
 | - | 21-23 Sep | No class - Chuseok week | - |
-| 7 | Mon 28 Sep | Web search, and what is wrong with it today. Crawling, indexing at scale, PageRank, HITS. The modern commercial stack, who owns an index, eleven weaknesses | Three-engine query comparison, before class |
-| 8 | Wed 30 Sep | Bi-encoders, and one space for both jobs. SentenceBERT, DPR, hard negatives, distillation. LLM embedders. Generating and retrieving in a single pass | - |
+| 7 | Mon 28 Sep | Approximate nearest neighbour search. HNSW, IVF-PQ, product quantisation. Vector databases. The recall-latency curve | - |
+| 8 | Wed 30 Sep | **Discussion.** BEIR. Launch of the class collection and judging protocol | Review, Tue 18:00 |
 | - | Mon 05 Oct | No class - substitute holiday | - |
 | 9 | Wed 07 Oct | **Project workshop 1, 90 min.** Building a test collection. Protocol design, live judging, disagreement analysis. Project kickoff | Two queries per student, in session |
 | 10 | Mon 12 Oct | Late interaction, and multi-vector made servable. ColBERT, SPLADE, hybrid retrieval and fusion. MUVERA, CRISP, ColPali | - |
-| 11 | Wed 14 Oct | **Discussion.** ColBERT | Review, Tue 18:00 |
+| 11 | Wed 14 Oct | **Discussion.** Critically Examining the "Neural Hype" | Review, Tue 18:00 |
 | 12 | Mon 19 Oct | Retrieval that needs reasoning. Reasoning-intensive queries, synthetic training data, rerankers that reason | - |
-| 13 | Wed 21 Oct | **Discussion.** BRIGHT | Review, Tue 18:00 |
+| 13 | Wed 21 Oct | **Discussion.** ColBERT | Review, Tue 18:00 |
 | 14 | Mon 26 Oct | Retrieval uncertainty. Probabilistic embeddings. Ambiguity as underspecification. Cross-modal retrieval | - |
-| 15 | Wed 28 Oct | **Discussion.** Probabilistic Embeddings for Cross-Modal Retrieval | Review, Tue 18:00 |
-| 16 | Mon 02 Nov | Approximate nearest neighbour search. HNSW, IVF-PQ, product quantisation. Vector databases. The recall-latency curve | - |
-| 17 | Wed 04 Nov | Attention as retrieval. Retrieval heads, attention as associative memory, and the memory-network lineage | - |
+| 15 | Wed 28 Oct | **Discussion.** BRIGHT | Review, Tue 18:00 |
+| 16 | Mon 02 Nov | Attention as retrieval. Retrieval heads, attention as associative memory, and the memory-network lineage | - |
+| 17 | Wed 04 Nov | **Discussion.** Probabilistic Embeddings for Cross-Modal Retrieval | Review, Tue 18:00 |
 | 18 | Mon 09 Nov | Memory as an architectural axis. Product-key memory, memory layers at scale, mixture of experts, and Engram's second axis of sparsity | - |
 | 19 | Wed 11 Nov | **Project workshop 2, 90 min.** Complete the judging pass, analyse judge agreement, implement and measure your group's modification | Relevance judgements complete |
 | 20 | Mon 16 Nov | Memory learned at test time. Titans, nested learning, cartridges. Weights that can be edited without forgetting | - |
@@ -383,11 +387,11 @@ The instructor prepares lecture material with model assistance and adds the mode
 
 | # | Session | Paper |
 |---|---|---|
-| 1 | 4 (9 Sep) | Yang, Lu & Lin (2019), *Critically Examining the "Neural Hype"* (SIGIR) |
-| 2 | 6 (16 Sep) | Thakur et al. (2021), *BEIR* (NeurIPS Datasets and Benchmarks) |
-| 3 | 11 (14 Oct) | Khattab & Zaharia (2020), *ColBERT* (SIGIR) |
-| 4 | 13 (21 Oct) | Su et al. (2025), *BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval* (ICLR) |
-| 5 | 15 (28 Oct) | Chun et al. (2021), *Probabilistic Embeddings for Cross-Modal Retrieval* (CVPR) |
+| 1 | 11 (14 Oct) | Yang, Lu & Lin (2019), *Critically Examining the "Neural Hype"* (SIGIR) |
+| 2 | 8 (30 Sep) | Thakur et al. (2021), *BEIR* (NeurIPS Datasets and Benchmarks) |
+| 3 | 13 (21 Oct) | Khattab & Zaharia (2020), *ColBERT* (SIGIR) |
+| 4 | 15 (28 Oct) | Su et al. (2025), *BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval* (ICLR) |
+| 5 | 17 (4 Nov) | Chun et al. (2021), *Probabilistic Embeddings for Cross-Modal Retrieval* (CVPR) |
 | 6 | 21 (18 Nov) | Cheng et al. (2026), *Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models* - the Engram paper |
 | 7 | 25 (2 Dec) | Jin et al. (2025), *Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning* (COLM) |
 | 8 | 27 (9 Dec) | Hu, Wang & McAuley (2026), *Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions* (ICLR) |
@@ -396,32 +400,68 @@ The instructor prepares lecture material with model assistance and adds the mode
 
 Four notes on the choices.
 
-- **Session 4** opens with a paper whose whole argument is that other people's baselines were weak. That sets the tone for eight sessions.
-- **Sessions 6 and 13** are the same finding five years apart. BEIR reports that BM25 beats dense retrievers out of domain; BRIGHT reports that they lose again once the query needs reasoning. Nobody is told in advance that these are related.
-- **Session 15** is the instructor's own paper, deliberately. Six students attacking it in front of the author settles the question of whether criticism is welcome.
+- **Session 8 opens the discussion series**, four weeks in. BEIR goes first because it launches the judging protocol that workshop 1 needs two days later.
+- **Sessions 8 and 15** are the same finding five years apart. BEIR reports that BM25 beats dense retrievers out of domain; BRIGHT reports that they lose again once the query needs reasoning. Nobody is told in advance that these are related.
+- **Session 11 puts "your baselines were weak" after the class has built a test collection by hand.** Reading that argument having just felt how arbitrary a relevance judgement is hits differently from reading it in week two.
+- **Session 17** is the instructor's own paper, deliberately. Six students attacking it in front of the author settles the question of whether criticism is welcome.
 - **Session 27** closes the loop to session 4 with 2026 material. A benchmark finds that no memory method masters all four competencies it defines; the adversary's paper then finds that swapping only the embedding model flips which method wins.
 
-{{< details "Supporting papers, where they are settled" >}}
+{{< details "Choosing your supporting paper: the rules" >}}
 
-The rest are published two weeks before each session. Extenders choose their own. Eight slots are still open. The Referee role closed four of them: a paper published in January 2026 has no reproduction study, but it usually has reviewers, and their thread is a better document than an invented rerun.
+Supporting papers are not assigned. Each week you hold one role and you choose the paper that serves it.
+
+**Every role, every week.**
+
+1. **Declare it.** Your review opens with one line before the four fields: *Supporting paper:* author, year, title, venue, URL or DOI. *Why it fits the role:* one sentence. No declaration line is marked as if no supporting paper was read.
+2. **Choose by Tuesday 18:00.** No approval step, no earlier deadline. The review is the moment of choice.
+3. **It must be checkable.** A DOI, an arXiv id, or a stable URL.
+4. **One paper.** If you read more, declare the one you rely on.
+5. **Not the assigned paper, and not another of the eight.** Everyone reads those already.
+6. **No reuse.** A paper declared in an earlier week cannot be declared again, in any role.
+7. **Duplicates between students are fine.** No coordination required, no penalty.
+8. **Papers only**, with two exceptions: blog posts, documentation, code and review threads are admissible for Applier and Referee, where the artefact type is the point.
+9. **English, or translate** the passage you rely on.
+10. **Authorship is not a bar.** A later paper by the assigned paper's own authors is often the right Extender choice.
+11. **If nothing fits, take the recommendation and say why** - one sentence on what you searched for and why it failed. **This scores 2.** An honest failed search is a result.
+
+**What full marks require, by role.**
+
+| Role | Your review must contain |
+|---|---|
+| Adversary | The specific claim under attack, quoted or cited to its table. The contrary evidence and the number it rests on. What would settle it. Whether the paper survives, and on what conditions |
+| Historian | What the paper took. **What it discarded** - the harder half. Whether discarding it was justified |
+| Replicator | One number from the assigned paper, its counterpart in yours, the size and direction of the discrepancy, and its most likely cause |
+| Referee | Your own verdict written **before** opening the thread - accept, reject or major revision, three reasons, a score out of 10. Then one thing the reviewers caught that you missed, and one you caught that they missed |
+| Extender | What the successor kept and changed. The experiment neither has run. What that experiment would settle. "Test it at larger scale" scores 1 |
+| Applier | The deployment scale you are costing, an estimate with the arithmetic shown, the binding constraint, and whether you would deploy it |
+
+**How the choice is marked.** It gates the review score rather than carrying its own. A paper that fails its role test caps the review at **1**, however good the writing. A paper that passes with the actions missing caps it at **2**. Above that the normal scale applies.
+
+**A case these rules do not cover is resolved in your favour for that week**, and the rules are amended before the next session. Raise it on Slack so the answer reaches everyone.
+
+{{< /details >}}
+
+{{< details "Recommended supporting papers" >}}
+
+These are recommendations, not assignments. Each is a safe choice that passes its role's test, and taking one carries no advantage and no penalty. The rest are published with the roster two weeks before each session.
 
 | Session | Role | Paper |
 |---|---|---|
-| 4 | Adversary | Nogueira & Cho (2019), *Passage Re-ranking with BERT* |
-| 4 | Historian | Armstrong et al. (2009), *Improvements That Don't Add Up* (CIKM) |
-| 4 | Replicator | Trotman, Puurula & Burgess (2014), *Improvements to BM25 and Language Models Examined* |
-| 4 | Applier | Yang, Fang & Lin (2018), *Anserini* |
-| 6 | Adversary | Ni et al. (2022), *Large Dual Encoders Are Generalizable Retrievers* |
-| 6 | Historian | Nguyen et al. (2016), *MS MARCO* |
-| 6 | Replicator | Kamalloo, Thakur, Lin et al. (2024), *Resources for Brewing BEIR* |
-| 6 | Applier | Lin et al. (2021), *Pyserini* |
-| 11 | Adversary | Hofstätter et al. (2021), *Balanced Topic Aware Sampling* (TAS-B) |
-| 11 | Historian | Karpukhin et al. (2020), *DPR* |
-| 11 | Replicator | Santhanam et al. (2022), *ColBERTv2* (NAACL) |
-| 11 | Applier | Santhanam et al. (2022), *PLAID* (CIKM) |
-| 13 | Adversary | Shao et al. (2025), *ReasonIR: Training Retrievers for Reasoning Tasks* |
-| 13 | Referee | The paper's ICLR 2025 review thread, on OpenReview |
-| 13 | Applier | Zhang et al. (2025), *Qwen3 Embedding* |
+| 11 | Adversary | Nogueira & Cho (2019), *Passage Re-ranking with BERT* |
+| 11 | Historian | Armstrong et al. (2009), *Improvements That Don't Add Up* (CIKM) |
+| 11 | Replicator | Trotman, Puurula & Burgess (2014), *Improvements to BM25 and Language Models Examined* |
+| 11 | Applier | Yang, Fang & Lin (2018), *Anserini* |
+| 8 | Adversary | Ni et al. (2022), *Large Dual Encoders Are Generalizable Retrievers* |
+| 8 | Historian | Nguyen et al. (2016), *MS MARCO* |
+| 8 | Replicator | Kamalloo, Thakur, Lin et al. (2024), *Resources for Brewing BEIR* |
+| 8 | Applier | Lin et al. (2021), *Pyserini* |
+| 13 | Adversary | Hofstätter et al. (2021), *Balanced Topic Aware Sampling* (TAS-B) |
+| 13 | Historian | Karpukhin et al. (2020), *DPR* |
+| 13 | Replicator | Santhanam et al. (2022), *ColBERTv2* (NAACL) |
+| 13 | Applier | Santhanam et al. (2022), *PLAID* (CIKM) |
+| 15 | Adversary | Shao et al. (2025), *ReasonIR: Training Retrievers for Reasoning Tasks* |
+| 15 | Referee | The paper's ICLR 2025 review thread, on OpenReview |
+| 15 | Applier | Zhang et al. (2025), *Qwen3 Embedding* |
 | 21 | Adversary | Behrouz, Zhong & Mirrokni (2025), *Titans: Learning to Memorize at Test Time* (NeurIPS) |
 | 21 | Historian | Sukhbaatar et al. (2015), *End-To-End Memory Networks* (NeurIPS) |
 | 21 | Referee | Titans' NeurIPS 2025 review thread, as a worked example. Engram itself has no thread, so you write the first review |
