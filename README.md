@@ -1,6 +1,6 @@
 # Scalable Trustworthy AI (STAI) Website
 
-Source for the STAI research group website at <https://s-t-a-i.github.io/>.
+Source for the STAI research group website at <https://stai-lab.org/>.
 
 Built with [Hugo](https://gohugo.io/) and deployed via GitHub Pages on every push to `master`.
 
